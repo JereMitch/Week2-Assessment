@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = "Git is a local repository on your computer to store your files/projects."
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = "Github takes all of your local files and stores them in a communal forum so that you can share them and access them from anywhere. Basically it's a cloud storage for your projects."
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -35,6 +39,11 @@
 
 //CODE HERE
 
+let init = {
+    description : "This command initializes a local repository",
+    code : "git init" 
+}
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,6 +51,11 @@
 */
 
 //CODE HERE
+
+let clone = {
+    description : "Creates a shallow copy of your repository.",
+    code : "git clone [url]"
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -51,6 +65,11 @@
 
 //CODE HERE
 
+let status = {
+    description : "Shows where you're at in your project, what has been saved or tracked by git and what isn't",
+    code : "git status"
+}
+
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,6 +77,11 @@
 */
 
 //CODE HERE
+
+let add = {
+    description : "This adds your file to the local repository you initialized.",
+    code : "git add [file name]"
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -67,6 +91,10 @@
 
 //CODE HERE
 
+let commit = {
+    description : "this saves the progress and updates the repository to have the most current progress of the project, whilst keeping the older saves or commits.",
+    code : "git commit -m 'leave a note to self'"
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +103,8 @@
 */
 
 //CODE HERE
+
+let push = {
+    description : "This pushes your file from the local repository on your computer up to gitHub.",
+    code : "git push"
+}
