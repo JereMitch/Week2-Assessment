@@ -15,20 +15,17 @@
 */
 
 //CODE HERE
+function greeter(firstName,state,age){
+let me = {
+  firstName : firstName,
+  state : state,
+  age : age,
+  } 
+  return `Hey! My name is ${firstName} and I live in ${state}.`
+}
 
-// let me = {
-//   firstName : `Jeremy`,
-//   state : `Utah`,
-//   age : 22,
-//   greeter : `greeter`
-//   } 
-//   greeter(){
-//     return `Hello! My name is ${this.firstName} and I live in ${this.state}.`
-//   }
-
-
-
-
+  me = greeter(`Jeremy`,`Utah`,22)
+console.log(me)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -56,10 +53,19 @@
 
 //CODE HERE
 
-carFactory(make,model,year) {
+function carFactory(make,model,year){
   let car = {
-    make : 'make',
-    model : 'model',
-    year : 'year'
+    make : make,
+    model : model,
+    year : year
   }
+  if(year > 2018){
+    car.isNew = true
+  } else{
+    car.isNew = false
+  }
+  return car
 }
+
+isMyCarNew = carFactory(`Ford`,`Ranger`,2020)
+console.log(isMyCarNew)
