@@ -16,6 +16,16 @@
 
 //CODE HERE
 
+// let me = {
+//   firstName : `Jeremy`,
+//   state : `Utah`,
+//   age : 22,
+//   greeter : `greeter`
+//   } 
+//   greeter(){
+//     return `Hello! My name is ${this.firstName} and I live in ${this.state}.`
+//   }
+
 
 
 
@@ -45,3 +55,11 @@
 */
 
 //CODE HERE
+
+carFactory(make,model,year) {
+  let car = {
+    make : 'make',
+    model : 'model',
+    year : 'year'
+  }
+}
