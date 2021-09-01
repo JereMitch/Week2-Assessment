@@ -70,7 +70,7 @@ function fidnZWords(word){
 //CODE HERE
 
 function iLove(name,love){
-  return name + " loves " + love
+  return `${name} loves ${love}!`
 }
 
 // test2 = iLove('Jeremy','music')
