@@ -1,18 +1,28 @@
 
-console.log("Welcome to the password validator tool!")
-console.log("Please input password for us to check")
+const readline = require("readline");
 
-function passwordValid (str){
-    if(str.length > 10){
-        return `Success!`
-    } else {
-        return `I'm sorry your password needs to be at least 10 characters long.`
+const reader = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+    reader.question("Welcome to the Password Validator! Please enter a password that is at least 10 characters: ", function(input){
+        class Validator{
+            constructor(input){
+                this.input = input,
+            this.length = false
+        }
+         password(){
+             if(this.input.length < 10){
+                 console.log("I'm sorry please enter a password with at least 10 characters")
+             } else{
+                 this.length = true
+                 console.log("Valid Password!")
+             }
+         }
     }
-}
+    let isItValid = new Validator(input)
+         isItValid.password()
 
-
-isMyPassVal = passwordValid(`Jeremyiscool`)
-console.log(isMyPassVal)
-
-
-
+         reader.close
+ })
